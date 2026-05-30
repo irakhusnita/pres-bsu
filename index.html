@@ -1,30 +1,175 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bank Sampah AKTIF</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petualangan AKTIF — SD IT Ihsanul Fikri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<section class="slide">
-  <div class="morph"></div>
+    <!-- Progress Indicator -->
+    <div id="scroll-progress"></div>
 
-  <h1>MANUAL BOOK BANK SAMPAH <span>“<b id="a1">A</b><b id="k1">K</b><b id="t1">T</b><b id="i1">I</b><b id="f1">F</b>”</span></h1>
+    <!-- ACT 0: HERO SECTION -->
+    <section id="hero" class="scene">
+        <div class="parallax-bg layer-1"></div>
+        <div class="parallax-bg layer-2"></div>
+        <div class="hero-content">
+            <h2 class="hero-label">MANUAL BOOK</h2>
+            <h1 id="aktif-title">
+                <span class="letter-a">A</span>
+                <span class="letter-k">K</span>
+                <span class="letter-t">T</span>
+                <span class="letter-i">I</span>
+                <span class="letter-f">F</span>
+            </h1>
+            <div class="values-container">
+                <span id="val-a" class="value">Amanah</span>
+                <span class="dot">•</span>
+                <span id="val-kt" class="value">Kolaboratif</span>
+                <span class="dot">•</span>
+                <span id="val-if" class="value">Inspiratif</span>
+            </div>
+            <p class="hero-school">SD IT Ihsanul Fikri Kota Magelang</p>
+            <div class="scroll-hint">
+                <span>Mulai Petualangan</span>
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
 
-  <h2>
-    <span class="word amanah">Amanah</span>,
-    <span class="word kolab">Kolaboratif</span>,
-    <span class="word inspiratif">Inspiratif</span>
-  </h2>
+    <!-- ACT 1: THE PROBLEM -->
+    <section id="problem" class="scene reveal">
+        <div class="content-box">
+            <div class="illustration-placeholder">
+                <!-- Illustration: A sad earth surrounded by floating waste -->
+                <div class="floating-trash"></div>
+            </div>
+            <h2>Dunia yang Sedang Sedih</h2>
+            <p>Setiap tahun, jutaan ton sampah menumpuk di sekitar kita. Jika kita diam saja, bumi tempat kita bermain akan kehilangan keindahannya. Siapkah kamu menjadi pahlawan bagi bumi?</p>
+        </div>
+    </section>
 
-  <p class="school">SD IT Ihsanul Fikri Kota Magelang</p>
-</section>
+    <!-- ACT 2: THE HEROES -->
+    <section id="heroes" class="scene reveal">
+        <div class="content-grid">
+            <div class="text-side">
+                <h2>Pahlawan Baru Telah Tiba!</h2>
+                <p>Di SD IT Ihsanul Fikri, kita tidak hanya belajar di kelas. Kita adalah <strong>Penjaga Alam</strong>. Bank Sampah AKTIF adalah markas rahasia kita untuk mengubah sampah menjadi kebaikan.</p>
+            </div>
+            <div class="hero-illustration">
+                <!-- Illustration: Students in capes made of recycling symbols -->
+            </div>
+        </div>
+    </section>
 
-<button class="nav left">‹</button>
-<button class="nav right">›</button>
+    <!-- ACT 3: THE MEANING (Interactive Cards) -->
+    <section id="meaning" class="scene">
+        <h2 class="section-title">Senjata Rahasia Kita: AKTIF</h2>
+        <div class="card-container">
+            <div class="card glass" data-color="green">
+                <h3>Amanah</h3>
+                <p>Menjaga kepercayaan. Setiap sampah yang kamu timbang adalah tanggung jawab yang jujur.</p>
+            </div>
+            <div class="card glass" data-color="blue">
+                <h3>Kolaboratif</h3>
+                <p>Kita tidak sendirian! Siswa, guru, dan wali murid bekerja sama seperti tim super.</p>
+            </div>
+            <div class="card glass" data-color="gold">
+                <h3>Inspiratif</h3>
+                <p>Menjadi contoh. Petualanganmu akan menginspirasi sekolah lain untuk ikut menjaga bumi.</p>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- ACT 4: JOURNEY OF BOLI -->
+    <section id="journey" class="scene reveal">
+        <h2>Perjalanan Si "Boli" Botol Plastik</h2>
+        <div class="timeline">
+            <div class="step" data-step="1">
+                <div class="step-icon">🧼</div>
+                <h4>Dibersihkan</h4>
+                <p>Boli dicuci bersih dan dikeringkan agar siap untuk petualangan baru.</p>
+            </div>
+            <div class="step" data-step="2">
+                <div class="step-icon">📏</div>
+                <h4>Ditimbang</h4>
+                <p>Boli ditimbang di kelas oleh tim pahlawan cilik dan dicatat di buku tabungan.</p>
+            </div>
+            <div class="step" data-step="3">
+                <div class="step-icon">🏦</div>
+                <h4>Disimpan</h4>
+                <p>Boli beristirahat di Gudang AKTIF sebelum bertemu teman-teman baru di Bank Sampah Induk.</p>
+            </div>
+            <div class="step" data-step="4">
+                <div class="step-icon">✨</div>
+                <h4>Berubah</h4>
+                <p>Boli dijual dan diolah kembali menjadi barang yang bermanfaat lagi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACT 5: THE TREASURE VAULT -->
+    <section id="vault" class="scene reveal">
+        <h2>Galeri Harta Karun</h2>
+        <p>Bukan sekadar sampah, ini adalah bahan berharga yang bisa kita selamatkan!</p>
+        <div class="vault-grid">
+            <div class="vault-item glass">
+                <span class="emoji">🥤</span>
+                <h4>Plastik</h4>
+                <span>PET, Gelas, Ember</span>
+            </div>
+            <div class="vault-item glass">
+                <span class="emoji">📦</span>
+                <h4>Kertas</h4>
+                <span>Kardus, HVS, Duplek</span>
+            </div>
+            <div class="vault-item glass">
+                <span class="emoji">🍳</span>
+                <h4>Logam</h4>
+                <span>Kaleng, Besi, Kuningan</span>
+            </div>
+            <div class="vault-item glass">
+                <span class="emoji">🧴</span>
+                <h4>Lainnya</h4>
+                <span>Minyak Jelantah, Banner</span>
+            </div>
+        </div>
+        <div class="warning-box glass">
+            <p>🚫 <strong>Jangan Bawa:</strong> Sampah basah, limbah B3 (baterai/medis), atau sampah yang tercampur.</p>
+        </div>
+    </section>
+
+    <!-- ACT 8: CHARACTER BUILDING -->
+    <section id="character" class="scene reveal">
+        <div class="character-garden">
+            <h2>Menanam Karakter Baik</h2>
+            <div class="flower-container">
+                <div class="flower" title="Disiplin">🌸</div>
+                <div class="flower" title="Kreatif">🌻</div>
+                <div class="flower" title="Kerja Sama">🌷</div>
+                <div class="flower" title="Jujur">🌼</div>
+            </div>
+            <p>Melalui Bank Sampah, kita belajar menjadi pribadi yang lebih hebat, disiplin, dan kreatif setiap harinya.</p>
+        </div>
+    </section>
+
+    <!-- ACT 10: CLOSING -->
+    <section id="closing" class="scene reveal">
+        <div class="final-card glass">
+            <h2>Masa Depan di Tanganmu</h2>
+            <p>Sekolah yang bersih, asri, dan nyaman dimulai dari satu botol yang kamu selamatkan hari ini.</p>
+            <div class="contact-info">
+                <p>📞 (0293) 314537</p>
+                <p>📧 bsuaktifsdit@gmail.com</p>
+                <p>🌐 sditihsanulfikri.sch.id</p>
+            </div>
+            <button class="cta-btn" onclick="window.scrollTo(0,0)">Mulai Dari Awal</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
