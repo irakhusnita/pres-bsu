@@ -2,6 +2,17 @@ let current = 0;
 const slides = document.querySelectorAll(".slide");
 const bar = document.getElementById("bar");
 
+const icons = ["♻️","🌱","🌍","🤝","✨","📋","⚖️","💰","🧴","🚫","✅","🏆","📚","💚","🌿"];
+
+slides.forEach((slide, i)=>{
+  if(!slide.querySelector(".visual")){
+    const visual = document.createElement("div");
+    visual.className = "visual";
+    visual.textContent = icons[i % icons.length];
+    slide.appendChild(visual);
+  }
+});
+
 function showSlide(i){
   slides.forEach(s => s.classList.remove("active"));
   slides[i].classList.add("active");
@@ -27,6 +38,7 @@ let startX = 0;
 document.addEventListener("touchstart", e=>{
   startX = e.touches[0].clientX;
 });
+
 document.addEventListener("touchend", e=>{
   let endX = e.changedTouches[0].clientX;
   if(startX - endX > 50) nextSlide();
